@@ -20,13 +20,39 @@
             padding: 20px 0;
         }
         .container {
-            max-width: 1000px;
+            max-width: 800px;
             margin: 20px auto;
             padding: 0 15px;
+        }
+        .education-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .education-item img {
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+            border-radius: 50%;
+            border: 2px solid #0077cc;
+        }
+        .education-details {
+            text-align: left;
+        }
+        .education-details strong {
+            font-size: 1.2em;
+            color: #0077cc;
         }
         a {
             color: #ffdd00;
             text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -36,10 +62,24 @@
         <a href="index.html">Back to Home</a>
     </header>
     <div class="container">
-        <ul>
-            <li><strong>MCA:</strong> JSS College, Mysuru (2023-2024) - CGPA: 8.47</li>
-            <li><strong>BCA:</strong> Yuvaraja’s College, Mysuru (2019-2022) - CGPA: 7.44</li>
-        </ul>
+        <div class="education-item">
+            <img src="jss.jpeg" alt="JSS College Icon">
+            <div class="education-details">
+                <strong>MCA (Master of Computer Applications)</strong>
+                <p>JSS College of Arts, Commerce, and Science, Mysuru</p>
+                <p>CGPA: 8.47</p>
+                <p>Passout: 2024</p>
+            </div>
+        </div>
+        <div class="education-item">
+            <img src="yuavaraja's.jpg" alt="Yuvaraja's College Icon">
+            <div class="education-details">
+                <strong>BCA (Bachelor of Computer Applications)</strong>
+                <p>Yuvaraja's College, Mysuru</p>
+                <p>CGPA: 7.44</p>
+                <p>Passout: 2022</p>
+            </div>
+        </div>
     </div>
     <footer>
         <p>&copy; 2024 Jayanth S. All rights reserved.</p>
