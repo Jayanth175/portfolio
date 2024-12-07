@@ -8,66 +8,95 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Times New Roman', serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: #ADD8E6; /* Light Blue Background */
+            color: #333333; /* Dark gray text */
         }
 
         header {
-            background-color: #0077cc;
-            color: #fff;
-            padding: 20px 0;
+            background-color: #000000; /* Black background for header */
+            color: #FFFFFF; /* White text for header */
+            padding: 30px 0;
             text-align: center;
         }
 
         header h1 {
             margin: 0;
+            font-size: 3em;
         }
 
-        .container {
-            max-width: 1000px;
-            margin: 50px auto;
-            padding: 0 15px;
-            text-align: center;
+        header p {
+            font-size: 1.1em;
+            margin-top: 10px;
         }
 
-        .container a {
+        .menu-bar {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            background-color: #000000; /* Black background for menu bar */
+            padding: 15px 0;
+        }
+
+        .menu-bar a {
             display: inline-block;
-            position: relative;
-            margin: 20px 10px;
+            margin: 0 15px;
             text-decoration: none;
             font-size: 1.2em;
-            color: #fff;
-            background: linear-gradient(45deg, #0077cc, #005fa3);
+            color: #FFFFFF; /* White text on black background */
+            background: #000000; /* Black for buttons */
             border-radius: 25px;
             padding: 15px 25px;
             text-align: center;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .container a:hover {
+        .menu-bar a:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+            background-color: #4682B4; /* Blue color on hover */
         }
 
-        .container a i {
+        .menu-bar a i {
             margin-right: 8px;
             font-size: 1.5em;
+        }
+
+        .intro-box {
+            background-color: #E0FFFF; /* Light Cyan background for intro box */
+            border: 2px solid #4682B4; /* Medium Blue border */
+            padding: 40px;
+            max-width: 1000px;
+            margin: 50px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro-box h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #4682B4; /* Medium Blue for heading */
+        }
+
+        .intro-box p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: #333333; /* Dark gray text for intro content */
         }
 
         footer {
             text-align: center;
             padding: 20px 0;
-            background-color: #005fa3;
-            color: #fff;
+            background-color: #000080; /* Navy Blue footer */
+            color: #FFFFFF; /* White text in footer */
         }
 
         footer a {
-            color: #ffdd00;
+            color: #ADD8E6; /* Light blue for footer links */
             text-decoration: none;
         }
 
@@ -79,15 +108,27 @@
 <body>
     <header>
         <h1>Jayanth S</h1>
-        <p>Bengaluru, Karnataka, India | +91-7259902175 | <a href="mailto:jayanthgowda170@gmail.com" style="color: #ffdd00;">jayanthgowda170@gmail.com</a></p>
+        <p>Bengaluru, Karnataka, India | +91-7259902175 | <a href="mailto:jayanthgowda170@gmail.com" style="color: #ADD8E6;">jayanthgowda170@gmail.com</a></p>
     </header>
 
-    <div class="container">
+    <!-- Menu bar for navigation -->
+    <div class="menu-bar">
         <a href="career.html"><i class="fas fa-user"></i> Career Objective</a>
         <a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a>
         <a href="skills.html"><i class="fas fa-code"></i> Skills</a>
         <a href="projects.html"><i class="fas fa-project-diagram"></i> Projects</a>
         <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        <!-- Resume Button -->
+        <a href="JayanthResume.pdf" target="_blank"><i class="fas fa-file-pdf"></i> My Resume</a>
+    </div>
+
+    <!-- Intro Section inside a box with light blue background -->
+    <div class="intro-box">
+        <h2>Intro</h2>
+        <b><p> I’m a tech enthusiast from Mandya. I recently completed my Master’s in Computer Applications from JSS College, Mysuru, where I achieved a CGPA of 8.47.</p>
+        <p>I possess strong technical skills in programming languages such as Java, Python, and JavaScript, along with proficiency in web development technologies like HTML, CSS, and MySQL. Currently, I am expanding my expertise by pursuing a Full Stack Web Development course at TAP Academy, which has enhanced my practical knowledge in modern web development frameworks.</p>
+        <p>I have hands-on experience developing projects such as an IPL Auction System and implementing OAuth authentication, which deepened my understanding of secure user authentication and data handling. Additionally, I recently earned a certification in Full Stack Development, showcasing my commitment to continuous learning.</p>
+        <p>My strengths include problem-solving, adaptability, and effective teamwork, which I believe are essential for success in the dynamic field of technology. I am passionate about leveraging my skills to create innovative solutions and am eager to contribute to impactful projects within your organization.</p></b>
     </div>
 
     <footer>
