@@ -13,20 +13,52 @@
             background-color: #f4f4f9;
             color: #333;
         }
+
         header, footer {
             background-color: #0077cc;
             color: #fff;
             text-align: center;
             padding: 20px 0;
         }
+
         .container {
-            max-width: 1000px;
+            max-width: 800px;
             margin: 20px auto;
             padding: 0 15px;
+            text-align: center;
         }
+
+        .icons {
+            margin: 20px 0;
+        }
+
+        .icons a {
+            display: inline-block;
+            margin: 0 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .icons a img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .icons a:hover {
+            transform: scale(1.1);
+        }
+
         a {
             color: #ffdd00;
             text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-item {
+            margin: 15px 0;
+            font-size: 1.2em;
         }
     </style>
 </head>
@@ -36,4 +68,23 @@
         <a href="index.html">Back to Home</a>
     </header>
     <div class="container">
-        <p>Email: <a href=\"mailto:jayanthgowda170@gmail.com\">jayanthgowda170@gmail.com</a></p>\n        <p>LinkedIn: <a href=\"http://www.linkedin.com/in/jayanth-s\">Jayanth S</a></p>\n        <p>GitHub: <a href=\"https://github.com/Jayanth175\">Jayanth175</a></p>\n    </div>\n    <footer>\n        <p>&copy; 2024 Jayanth S. All rights reserved.</p>\n    </footer>\n</body>\n</html>\n"}
+        <div class="contact-item">
+            <p>Phone: <a href="tel:+917259902175">7259902175</a></p>
+        </div>
+        <div class="contact-item">
+            <p>Email: <a href="mailto:jayanthgowda170@gmail.com">jayanthgowda170@gmail.com</a></p>
+        </div>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/jayanth-s/" target="_blank" title="LinkedIn Profile">
+                <img src="linkedIn.png" alt="LinkedIn Icon">
+            </a>
+            <a href="https://github.com/Jayanth175" target="_blank" title="GitHub Profile">
+                <img src="github.png" alt="GitHub Icon">
+            </a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Jayanth S. All rights reserved.</p>
+    </footer>
+</body>
+</html>
