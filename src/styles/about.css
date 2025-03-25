@@ -1,0 +1,129 @@
+/* Fully Updated About.css - Education Line & College Details Added */
+
+.about-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  color: black;
+}
+
+/* Button Section */
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.button-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.button-item:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.button-text {
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.button-item:hover .button-text,
+.education-header:hover .education-text,
+.training-header:hover .training-text {
+  color: hsl(0, 88%, 49%);
+  text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.7);
+  transform: scale(1.2);
+}
+
+/* Education Section with Line & Details */
+.education-details {
+  
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.education-line {
+  width: 1px;
+  height: 150px;
+  background: black;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: drawLine 1s ease-in-out forwards;
+}
+
+.education-content {
+  display: flex;
+  justify-content: space-between;
+  font-size: smaller;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 1s forwards;
+}
+
+.left, .right {
+  width: 45%;
+  padding: 10px;
+  text-align: center;
+  font-weight:normal;
+  position: relative;
+  color: black;
+}
+
+.passout-year-left, .passout-year-right {
+  position: absolute;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.passout-year-left {
+  left: -50px;
+}
+
+.passout-year-right {
+  right: -50px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes drawLine {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 150px;
+  }
+}
