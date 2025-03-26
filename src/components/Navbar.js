@@ -32,18 +32,11 @@ const Navbar = () => {
         <img src={trainingIcon} alt="Training" />
         <span className="tooltip">Skills and Certificates</span>
       </div>
-      <div
-        className="nav-item"
-        onClick={() =>
-          window.open(
-            "https://Jayanth175.github.io/portfolio1/Jayanth_Resume.pdf",
-            "_blank"
-          )
-        }
-      >
-        <img src={resumeIcon} alt="Resume" />
-        <span className="tooltip">Resume</span>
-      </div>
+      <div className="nav-item" onClick={() => window.open("/Jayanth_Resume.pdf", "_blank")}>
+  <img src={resumeIcon} alt="Resume" />
+  <span className="tooltip">Resume</span>
+</div>
+
     </div>
   );
 };
