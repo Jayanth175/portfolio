@@ -1,4 +1,3 @@
-// Updated Navbar.js
 import React from "react";
 import "../styles/navbar.css";
 import homeIcon from "../assets/button/home-button.png";
@@ -29,12 +28,19 @@ const Navbar = () => {
         <img src={skillsIcon} alt="Projects" />
         <span className="tooltip">Project</span>
       </div>
-      
       <div className="nav-item" onClick={() => scrollToSection("Skills")}>
         <img src={trainingIcon} alt="Training" />
         <span className="tooltip">Skills and Certificates</span>
       </div>
-      <div className="nav-item" onClick={() => window.open("/Jayanth_Resume.pdf", "_blank")}>
+      <div
+        className="nav-item"
+        onClick={() =>
+          window.open(
+            "https://Jayanth175.github.io/portfolio1/Jayanth_Resume.pdf",
+            "_blank"
+          )
+        }
+      >
         <img src={resumeIcon} alt="Resume" />
         <span className="tooltip">Resume</span>
       </div>
